@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="h1">
+    <div class="h1i">ToDo List</div>
+  </header>
+
+  <main class="c1">
+    <section class="c2">
+      <h1 class="t1">ToDo List</h1>
+
+      <form class="f1" id="taskForm">
+        <label class="s1" for="taskInput">New Task</label>
+        <input id="taskInput" class="i1" type="text" placeholder="New Task" />
+        <button id="addBtn" class="b1" type="submit">Add</button>
+      </form>
+
+      <div class="f2">
+        <button type="button" class="fb1 active" data-filter="all">All</button>
+        <button type="button" class="fb1" data-filter="active">Active</button>
+        <button type="button" class="fb1" data-filter="completed">Completed</button>
+      </div>
+
+      <section class="l1">
+        <ul id="taskList" class="u1"></ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
