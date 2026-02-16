@@ -1,0 +1,23 @@
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 14px 30px;
+}
+
+.back {
+  text-decoration: none;
+  color: #111;
+}
+
+.price {
+  font-weight: 800;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="image-wrap" (click)="openKaspi()" role="button" tabindex="0">
+    <img class="main-img" [src]="product.images[selectedIndex] || product.image" [alt]="product.name" />
+  </div>
+
+  <div class="thumbs" *ngIf="product.images.length >= 3">
+    <button
+      class="thumb"
+      *ngFor="let img of product.images; let i = index"
+      (click)="setImage(i)"
+      [class.active]="i === selectedIndex"
+      type="button"
+    >
+      <img [src]="img" [alt]="product.name + ' photo ' + (i + 1)" />
+    </button>
+  </div>
+
+  <div class="content">
+    <h3 class="title" (click)="openKaspi()" role="button" tabindex="0">{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+
+    <div class="meta">
+      <div class="price">{{ product.price | number }} ₸</div>
+      <div class="rating">
+        <span class="stars">
+          <span *ngFor="let s of stars">{{ s ? '★' : '☆' }}</span>
+        </span>
+        <span class="rating-num">{{ product.rating }}</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn" [href]="product.link" target="_blank" rel="noopener noreferrer">Open Kaspi</a>
+      <a class="btn outline" [href]="whatsappShareUrl" target="_blank" rel="noopener noreferrer">Share WhatsApp</a>
+      <a class="btn outline" [href]="telegramShareUrl" target="_blank" rel="noopener noreferrer">Share Telegram</a>
+    </div>
+  </div>
+</div>
