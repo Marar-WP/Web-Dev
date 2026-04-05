@@ -1,0 +1,328 @@
+{
+  "info": {
+    "_postman_id": "2623056a-53af-4cf0-89b7-0f0c20347068",
+    "name": "NEW Shop API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53768635",
+    "_collection_link": "https://go.postman.co/collection/53768635-2623056a-53af-4cf0-89b7-0f0c20347068?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "GetALlCategories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/1/products/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                "1",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Test Category\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Updated Category\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/5/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                "5",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/categories/1/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/products/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/products/4/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "products",
+                "4",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Test Product\",\r\n  \"price\": 100,\r\n  \"description\": \"Test product description\",\r\n  \"count\": 5,\r\n  \"is_active\": true,\r\n  \"category\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/products/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Updated Meat\",\r\n  \"price\": 15,\r\n  \"description\": \"Updated tasty\",\r\n  \"count\": 99,\r\n  \"is_active\": true,\r\n  \"category\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/products/4/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "products",
+                "4",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/products/3/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "products",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
